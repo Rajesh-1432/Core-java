@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="e2" class="beans.Engine2" autowire-candidate="false">
+<property name="ModelYear" value="2023"></property>
+</bean>
+<bean id="e3" class="beans.Engine2" >
+<property name="ModelYear" value="2024"></property>
+</bean>
+
+<bean id="b" class="beans.Breaks">
+<property name="bname" value="double AWS"></property>
+</bean>
+<bean id="c2" class="beans.Car2" autowire="byType">
+<property name="carname" value="BMW"></property>
+
+</bean>
+</beans>

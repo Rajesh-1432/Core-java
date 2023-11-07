@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>WebProj</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+     </welcome-file-list>
+     <servlet>
+     <servlet-name>sone</servlet-name>
+     <servlet-class>controller.srv1</servlet-class>
+     </servlet>
+     <servlet-mapping> 
+     <servlet-name>sone</servlet-name>
+     <url-pattern>/rajesh</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     <servlet-name>scodfig</servlet-name>
+     <servlet-class>controller.Config_demo</servlet-class>
+    
+     <init-param>
+     <param-name>eid</param-name>
+     <param-value>101</param-value>
+     </init-param>
+      <init-param>
+     <param-name>ename</param-name>
+     <param-value>rajesh</param-value>
+     </init-param>
+      <init-param>
+     <param-name>esal</param-name>
+     
+     <param-value>100000</param-value>
+     </init-param>
+     
+     </servlet>
+     <servlet-mapping>
+     <servlet-name>scodfig</servlet-name>
+      <url-pattern>/sconfig</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+     <servlet-name>sconfig_demo2</servlet-name>
+     <servlet-class>controller.Config_demo2</servlet-class>
+     
+     <init-param>
+     <param-name>S_id</param-name>
+     <param-value>14</param-value>
+     </init-param>
+     <init-param>
+     <param-name>S_Name</param-name>
+     <param-value>Rajesh</param-value>
+     </init-param>
+     <init-param>
+     <param-name>S_Age</param-name>
+     <param-value>22</param-value>
+     </init-param>
+     </servlet>
+     
+     <servlet-mapping>
+     <servlet-name>sconfig_demo2</servlet-name>
+     <url-pattern>/raj</url-pattern>
+     </servlet-mapping>
+     
+     <context-param>
+     <param-name>driver</param-name>
+     <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+     </context-param>
+     <context-param>
+     <param-name>url</param-name>
+     <param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+     </context-param>
+     <context-param>
+     <param-name>uname</param-name>
+     <param-value>system</param-value>
+     </context-param>
+     <context-param>
+     <param-name>pass</param-name>
+     <param-value>rajmca</param-value>
+     </context-param>
+     
+     <servlet>
+     <servlet-name>context_Demo</servlet-name>
+     <servlet-class>controller.Context_demo</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     <servlet-name>context_Demo</servlet-name>
+     <url-pattern>/SContext</url-pattern>
+     </servlet-mapping>
+     
+     <context-param>
+     <param-name>driver</param-name>
+     <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+     </context-param>
+     <context-param>
+     <param-name>url</param-name>
+     <param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+     </context-param>
+     <context-param>
+     <param-name>uname</param-name>
+     <param-value>system</param-value>
+     </context-param>
+     <context-param>
+     <param-name>pass</param-name>
+     <param-value>rajmca</param-value>
+     </context-param>
+     
+     <servlet>
+     <servlet-name>Context_demo2</servlet-name>
+     <servlet-class>controller.Context_demo2</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     <servlet-name>Context_demo2</servlet-name>
+     <url-pattern>/SContext2</url-pattern>
+     </servlet-mapping>
+</web-app>

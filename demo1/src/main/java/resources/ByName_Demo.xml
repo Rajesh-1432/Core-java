@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        <beans>
+        <bean id="st" class="beans.Student">
+        <property name="Sname" value="Rajesh"></property>
+        <property name="courses">
+        <list>
+        <value>java</value>
+         <value>sql</value>
+          <value>js</value>
+           <value>react</value>
+        </list>
+        </property>
+        <property name="fee" value="30000"></property>
+        </bean>
+        <bean id="college" class="beans.College" autowire="byName">
+        <property name="cname" value="AKNU-MSN-KKD"></property>
+        </bean>
+        </beans>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+<context:annotation-config/>
+<bean id="e1" class="beans.Engine3">
+<property name="modelyear" value="2023"></property>
+</bean>
+<bean id="e3" class="beans.Engine3">
+<property name="modelyear" value="2020"></property>
+</bean>
+<bean id="e2" class="beans.Engine3">
+<property name="modelyear" value="2025"></property>
+</bean>
+<bean id="car" class="beans.Autowire_Demo">
+<property name="carname" value="BMW"></property>
+
+</bean>
+</beans>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="e1" class="beans.Engine1">
+<property name="ModelYear" value="2023"></property>
+</bean>
+<bean id="e2" class="beans.Engine1">
+<property name="ModelYear" value="2024"></property>
+</bean>
+<bean id="e3" class="beans.Engine1">
+<property name="ModelYear" value="2025"></property>
+</bean>
+<bean id="car" class="beans.String_Array">
+<property name="carname">
+<list>
+<value>aadi</value>
+<value>bmw</value>
+<value>benw</value>
+<value>honda city</value>
+<value>honda amaze</value>
+<value>ertiga</value>
+<value>kia</value>
+</list>
+</property>
+<property name="engine">
+<list>
+<ref bean="e1"/>
+<ref bean="e2"/>
+<ref bean="e3"/>
+
+</list>
+</property>
+</bean>
+</beans>

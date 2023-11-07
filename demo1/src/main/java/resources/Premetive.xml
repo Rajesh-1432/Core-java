@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        <beans>
+        <bean id="premetive" class="beans.PremetiveBeanDemo">
+        <constructor-arg type="int" value="10"></constructor-arg>
+        <constructor-arg type="boolean" value="true"></constructor-arg>
+        <constructor-arg type="double"  value="20.20"></constructor-arg>
+        <constructor-arg type="float" value="1010.232"></constructor-arg>
+        <constructor-arg type="char" value="R"></constructor-arg>
+        <constructor-arg type="byte" value="2"></constructor-arg>
+        <constructor-arg type="java.lang.String" value="Rajesh"></constructor-arg>
+        </bean>
+        </beans>

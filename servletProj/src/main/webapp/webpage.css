@@ -1,0 +1,114 @@
+
+body{
+    background-image: url("./images/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#raj{
+    color: rgb(3, 52, 52);
+}
+.navbar{
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content:space-around;
+    height: 80px;
+    margin-top:auto;
+    
+    
+    
+    }
+    .hor ul{
+        display: flex;
+     list-style-type: none;   
+     
+    }
+    .hor ul li a{
+   
+        text-decoration: none;
+        padding: 0px 20px;
+        font-size: 20px;
+        color:aliceblue;
+        text-shadow: 3px 3px 7px rgb(6, 6, 6);
+        cursor: pointer;
+        text-decoration: none;
+        float: left;
+        display: block;
+        
+    
+    }
+    .hor ul li a:hover{
+        color:rgb(245, 31, 8);
+        border-radius: 7px;
+    }
+    .btn{
+        cursor: pointer;
+        background-color: aliceblue;
+        width: 200px;
+        height: 40px;
+        color: black;
+        border-radius: 22px;
+    }
+    p{
+        
+        text-align: center;
+        font-size: 25px;
+        color: aliceblue;
+        font-family:cursive;
+    }
+    .btn1{
+        cursor: pointer;
+        background-color: rgb(9, 145, 52);
+        width: 200px;
+        height: 40px;
+        color: black;
+        border-radius: 22px;
+        
+    }
+    .btn1:hover{
+        background-color: rgb(233, 11, 11);
+    }
+    .btn:hover{
+        background-color: rgb(233, 11, 11);
+    }
+    
+    .three{
+        position: fixed;
+        padding-left: 33%;
+    }
+   h1{
+    padding-left: 20%;
+    font-size: 35px;
+    font-family:cursive;
+    color: aliceblue;
+    text-shadow: 1px 3px 7px rgb(218, 19, 19);
+    
+   }
+
+      .closure::after {
+        content: '';
+        animation: changetext 10s infinite linear;
+        
+        font-size: 35px;
+        font-family:cursive;
+        color: aliceblue;
+        text-shadow: 3px 3px 7px rgb(6, 6, 6);
+       
+      }
+      
+      
+      @keyframes changetext {
+        0%{
+            content: "HTML";
+            color: red;
+            
+        }
+        30% {
+            content: "CSS";
+           color: yellow;
+        }
+        50% {
+            content: "JAVA";
+            color: green;
+        }
+      }      

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>REGISTRATION | E-CDC</title>
+
+  <!-- Relative links for accessing bootstrap module and fontawesome -->
+  <link rel="stylesheet" type="text/css+" href="fontawesome-free-5.12.0-web/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- End of style sheet refernces-->
+</head>
+<body>
+
+<!--Nav bar for the wegpage displayed in the browser to navigate -->
+<nav class="navbar sticky-top navbar-expand-lg " style="background-color: white; box-shadow: 0px 4px 5px rgba(0, 0, 150, 0.5); color: steelblue">
+  <img src="aknu_logo.png" width="50px" height="55px">
+  <a class="navbar-brand" href="aknu.edu.in/CDC1/" style="color: blue; font-size:22px">
+  Adikavi Nannaya University</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" style="color: blue; height: 20px"><i class="fa fa-bars" aria-hidden="true"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.php">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="registration.php">REGISTRATION</a>
+      </li>
+       <li>
+      	<div class="dropdown show">
+      	  <a class="btn btn-inline-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      	    LOGIN
+      	  </a>
+
+      	  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      	    <a class="dropdown-item" href="staff_login.php">Admin login</a>
+      	    <a class="dropdown-item" href="college_login.php">College login</a>
+      	  </div>
+      	</div>
+      </li>
+	  </ul><hr>
+    <span class="navbar-text" style="font-size: 20px">
+      College Development Council &nbsp
+    </span>
+  </div>
+</nav>
+
+<div class="jumbotron bg-primary text-white  mb-5">
+  <h1 class="mt-4">Registration form</h1>
+</div>
+
+<div class="container md-5 pb-5">
+	<form action="./add" method="get">
+	  <div class="form-group row">
+	    <label class="col-sm-4 col-form-label">College code</label>
+	    <div class="col-sm-6">
+	      <input type="text" class="form-control" name="college_code" id="college_code" placeholder="eg: ***" maxlength="3" minlength="3" required>
+	    </div>
+	  </div>
+	  <div class="form-group row">
+	    <label class="col-sm-4 col-form-label">Password</label>
+	    <div class="col-sm-6">
+	      <input type="password" class="form-control" value="" name="password" id="txtPassword" placeholder="create-password" maxlength="25" minlength="5" required>
+	    </div>
+		<div class="registrationFormAlert" style="color:green;" id="CheckPasswordMatch"></div>
+	  </div>
+
+	  <div class="form-group row">
+	    <label class="col-sm-4 col-form-label">College name</label>
+	    <div class="col-sm-6">
+	      <input type="text" class="form-control" name="college_name" id="college_name" placeholder="college name" maxlength="50" required>
+	    </div>
+	  </div>
+
+	  <div class="form-group row">
+	    <label class="col-sm-4 col-form-label">Address</label>
+	    <textarea class="form-control col-sm-6" name="address" id="address" rows="3" maxlength="50" placeholder="enter a maximum of 50 characters" required></textarea>
+	  </div>
+
+	  <div class="form-group row">
+	    <label class="col-sm-4 col-form-label">Society name</label>
+	    <div class="col-sm-6">
+	      <input type="text" class="form-control" name="society_name" id="society_name" placeholder="Society name" maxlength="25" required>
+	    </div>
+	  </div>
+
+	  <div class="form-group row">
+	    <label class="col-sm-4 col-form-label">Year of establishment</label>
+	    <div class="col-sm-6">
+	      <input type="text" class="form-control" name="year_of_establishment" id="year_of_establishment" placeholder="1990" maxlength="4" required>
+	    </div>
+	  </div>
+	  <hr>
+
+	  <div class="form-group row">
+	    <label class="col-sm-4 col-form-label">Correspondent name</label>
+	    <div class="col-sm-6">
+	      <input type="text" class="form-control" name="correspondent_name" id="correspondent_name" placeholder="Correspodent name" maxlength="30" required>
+	    </div>
+	  </div>
+
+	  <div class="form-group row">
+	    <label class="col-sm-4 col-form-label">Correspondent contact number</label>
+	    <div class="col-sm-6">
+	      <input type="text" class="form-control" name="correspondent_contact_number" id="correspondent_contact_number" placeholder="123-1234/12345-12345"  required>
+	    </div>
+	  </div>
+
+	  <div class="form-group row">
+	    <label class="col-sm-4 col-form-label">Correspondent email id</label>
+	    <div class="col-sm-6">
+	      <input type="email" class="form-control" name="correspondent_email_id" id="correspondent_email_id" placeholder="example@gmail.com" required>
+	    </div>
+	  </div>
+	  <hr>
+
+	  <div class="form-group row">
+	    <label class="col-sm-4 col-form-label">Pricipal name</label>
+	    <div class="col-sm-6">
+	      <input type="text" class="form-control" name="principal_name" id="principal_name" placeholder="Principal name" maxlength="30" required>
+	    </div>
+	  </div>
+
+	  <div class="form-group row">
+	    <label class="col-sm-4 col-form-label">Principal contact number</label>
+	    <div class="col-sm-6">
+	      <input type="text" class="form-control" name="principal_contact_number" id="principal_contact_number" placeholder="123-1234/12345-12345"  required>
+	    </div>
+	  </div>
+	   <div class="form-group row">
+	    <label class="col-sm-4 col-form-label">College website (optional)</label>
+	    <div class="col-sm-6">
+	      <input type="text" class="form-control" name="college_website" id="college_website" placeholder="www.aknu.edu.in">
+	    </div>
+	  </div> 
+        <div class="form-group row">
+	    <label class="col-sm-4 col-form-label">Principal mail id</label>
+	    <div class="col-sm-6">
+	      <input type="email" class="form-control" name="principal_email_id" id="principa_email_id" placeholder="example@gmail.com" required>
+	   </div>
+	  </div>
+	  <hr>
+
+	  <div class="form-group row">
+	   <label class="col-sm-4 col-form-label">College building </label>
+	    <div class="col-sm-3">
+	    	<div class="form-check">
+	    		<input class="form-check-input" type="radio" name="building_type" value="owned" checked>
+	    		<label class="form-check-label">Owned</label>
+	    	</div>
+	    </div>
+	    <div class="col-sm-3">
+	    	<div class="form-check">
+	    		<input class="form-check-input" type="radio" name="building_type" value="leased" >
+	    		<label class="form-check-label">Leased</label>
+	    	</div>
+	    </div>
+	   </div>
+
+	 
+
+	  <div class="form-group row">
+	    <label class="col-sm-4 col-form-label"><B>Courses:</B></label>
+	    
+<div class="col-sm-6">
+	     
+	    </div>
+	  </div>
+	  <div class="form-group row" id="id0">
+	  
+	  
+	    <br><label class="col-sm-4 col-form-label">MCA</label>
+	    <div class="col-sm-6">
+	      <input type="checkbox" class="1st" >
+		  </div>
+	  </div>
+
+	  <div class="form-group row" id="id2">
+	    <br><label class="col-sm-4 col-form-label">Intake</label>
+	    <div class="col-sm-6">
+	      <input type="text" class="form-control" name="mca_intake" id="intake" placeholder="enter course intake" >
+	    </div>
+	  </div>
+	  <div class="form-group row" id="id1">
+
+	    <br><label class="col-sm-4 col-form-label">MBA</label>
+	    <div class="col-sm-6">
+	      <input type="checkbox" class="2nd" >
+		  </div>
+	  </div>
+
+	  <div class="form-group row" id="id3">
+	    <br><label class="col-sm-4 col-form-label">Intake</label>
+	    <div class="col-sm-6">
+	      <input type="text" class="form-control" name="mba_intake" id="intake" placeholder="enter course intake" >
+	    </div>
+	  </div>
+
+
+	  <center>
+	  	<div class="col-sm-6">
+	  	  <button type="submit" name="save" id="cbn" value="submit" class="btn btn-primary btn-lg">Register</button>
+	  	</div>
+	  </center>
+	</form>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="jquery-3.2.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#id2').hide();
+	$('#id3').hide();
+	$('input.1st').click(function(){
+		if($(this).is(':checked'))
+		{
+			$('#id2').show();
+		}
+		else 
+		{
+			$('#id2').hide();
+		}
+	});
+	$('input.2nd').click(function(){
+		if($(this).is(':checked'))
+		{
+			$('#id3').show();
+		}
+		else 
+		{
+			$('#id3').hide();
+		}
+	});
+	
+});
+</script>
+</body>
+</html>
